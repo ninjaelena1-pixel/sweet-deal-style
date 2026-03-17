@@ -20,7 +20,7 @@ export function ContractToolbar({
   onAdd, onExport, regions
 }: ToolbarProps) {
   return (
-    <div className="flex items-center gap-2.5 flex-wrap bg-card border border-border rounded-lg p-3 shadow-sm">
+    <div className="flex items-center gap-2.5 flex-wrap bg-card border border-border rounded-lg p-3 shadow-sm [&>*]:shrink-0 [&>.search-wrap]:shrink [&>.search-wrap]:min-w-[200px]">
       {/* Search */}
       <div className="relative flex-1 min-w-[200px]">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4 pointer-events-none" />
