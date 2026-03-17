@@ -68,51 +68,51 @@
 
   /* ══ SLATE THEME ══ */
   [data-theme="slate"] {
-    --background: 222 20% 12%;
-    --foreground: 215 25% 90%;
+    --background: 220 14% 20%;
+    --foreground: 215 20% 92%;
 
-    --card: 222 18% 15%;
-    --card-foreground: 215 25% 90%;
-    --card-hover: 222 18% 18%;
+    --card: 220 13% 24%;
+    --card-foreground: 215 20% 92%;
+    --card-hover: 220 13% 28%;
 
-    --popover: 222 18% 15%;
-    --popover-foreground: 215 25% 90%;
+    --popover: 220 13% 24%;
+    --popover-foreground: 215 20% 92%;
 
-    --primary: 207 65% 58%;
+    --primary: 210 60% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 222 15% 20%;
-    --secondary-foreground: 215 20% 80%;
+    --secondary: 220 10% 30%;
+    --secondary-foreground: 215 15% 80%;
 
-    --muted: 222 12% 18%;
-    --muted-foreground: 215 22% 50%;
+    --muted: 220 10% 28%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 222 15% 20%;
-    --accent-foreground: 215 25% 90%;
+    --accent: 220 10% 30%;
+    --accent-foreground: 215 20% 92%;
 
-    --destructive: 354 65% 52%;
+    --destructive: 354 60% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --success: 147 45% 52%;
+    --success: 152 42% 50%;
     --success-foreground: 0 0% 100%;
 
-    --warning: 38 70% 48%;
+    --warning: 38 65% 50%;
     --warning-foreground: 0 0% 10%;
 
-    --border: 222 15% 22%;
-    --input: 222 20% 12%;
-    --ring: 207 65% 58%;
+    --border: 220 10% 32%;
+    --input: 220 14% 20%;
+    --ring: 210 60% 55%;
 
-    --th-bg: 222 20% 11%;
-    --row-hover: 207 65% 58% / 0.05;
-    --row-stripe: 0 0% 100% / 0.02;
+    --th-bg: 220 14% 22%;
+    --row-hover: 210 60% 55% / 0.06;
+    --row-stripe: 0 0% 100% / 0.025;
 
-    --blue: 207 65% 58%;
-    --blue-glow: 207 65% 58% / 0.25;
-    --green: 147 45% 52%;
-    --green-glow: 147 45% 52% / 0.2;
-    --gold: 38 55% 48%;
-    --purple: 265 50% 55%;
+    --blue: 210 60% 55%;
+    --blue-glow: 210 60% 55% / 0.25;
+    --green: 152 42% 50%;
+    --green-glow: 152 42% 50% / 0.2;
+    --gold: 38 55% 52%;
+    --purple: 265 50% 58%;
   }
 
   /* ══ WHITE (LIGHT) THEME ══ */
