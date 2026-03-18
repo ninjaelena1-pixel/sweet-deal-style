@@ -1,7 +1,10 @@
 import { useTheme } from '@/contexts/ThemeContext';
+import { useAuth } from '@/contexts/AuthContext';
+import { LogOut } from 'lucide-react';
 
 export function DashboardHeader() {
   const { theme, setTheme } = useTheme();
+  const { user, signOut } = useAuth();
 
   return (
     <header className="flex items-center justify-between px-4 md:px-8 py-3 bg-card border-b border-border shrink-0 shadow-sm relative z-10">
@@ -47,15 +50,24 @@ export function DashboardHeader() {
           >☀️</button>
         </div>
 
-        {/* User */}
-        <div className="hidden sm:flex items-center gap-2">
-          <div className="text-right">
-            <div className="text-[11px] font-bold tracking-wider text-foreground uppercase">ADMIN</div>
-            <div className="text-[11px] text-muted-foreground uppercase">Суперадмин</div>
+        {/* User + Logout */}
+        <div className="flex items-center gap-2">
+          <div className="hidden sm:block text-right">
+            <div className="text-[11px] font-bold tracking-wider text-foreground uppercase truncate max-w-[120px]">
+              {user?.email?.split('@')[0] || 'USER'}
+            </div>
+            <div className="text-[11px] text-muted-foreground uppercase">{user?.email?.split('@')[1] || ''}</div>
           </div>
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-success flex items-center justify-center text-sm font-bold text-primary-foreground shadow-md">
-            A
+            {(user?.email?.[0] || 'U').toUpperCase()}
           </div>
+          <button
+            onClick={signOut}
+            className="w-8 h-8 rounded-lg border border-border text-muted-foreground flex items-center justify-center transition-all hover:border-destructive hover:text-destructive hover:bg-destructive/5"
+            title="Выйти"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+          </button>
         </div>
       </div>
     </header>
